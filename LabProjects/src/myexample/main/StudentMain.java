@@ -13,7 +13,7 @@ public class StudentMain {
 	
 	Scanner sc=new Scanner(System.in);
 	String name;
-	int id,rollno;
+	int id,age;
 	
 	public  void addStudent()
 	{
@@ -21,10 +21,10 @@ public class StudentMain {
 		id=sc.nextInt();
 		System.out.println("Enter Student name: ");
 		name=sc.next();
-		System.out.println("Enter Student roll no: ");
-		rollno=sc.nextInt();
+		System.out.println("Enter Student age: ");
+		age=sc.nextInt();
 		 
-		Student sInput=new Student(id,name,rollno);
+		Student sInput=new Student(id,name,age);
 		
 		if(!studMain.checkStudentRecord(sInput))
 		{
